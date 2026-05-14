@@ -21,7 +21,7 @@ function prepararLlaveSaludo() {
 const changeLanguage = (language) => {
     prepararLlaveSaludo(); // Ejecutamos antes de traducir
 
-    fetch(`../lenguaje/${language}.json`)
+    fetch(`./lenguaje/${language}.json`)
         .then(res => res.json())
         .then(data => {
             const textsToChange = document.querySelectorAll("[data-section]");
@@ -72,7 +72,7 @@ if (langSelector) {
 
 // 3. Slider de Imágenes (Lógica básica)
 let currentSlide = 0;
-const slides = ["../Images/Pagina_principal.webp", "../Images/ceremonia_01.webp", "../Images/ceremonia_02.webp", "../Images/ceremonia_03.webp"];
+const slides = ["./Images/Pagina_principal.webp", "./Images/ceremonia_01.webp", "./Images/ceremonia_02.webp", "./Images/ceremonia_03.webp"];
 const sliderElement = document.querySelector('.principal_img');
 
 function nextSlide() {
