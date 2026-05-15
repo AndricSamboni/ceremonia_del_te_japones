@@ -18,12 +18,14 @@ function prepararLlaveSaludo() {
 }
 
 // Función principal de traducción
+let traduccion_actual={};
 const changeLanguage = (language) => {
     prepararLlaveSaludo(); // Ejecutamos antes de traducir
 
     fetch(`../lenguaje/${language}.json`)
         .then(res => res.json())
         .then(data => {
+            traduccion_actual=data;
             const textsToChange = document.querySelectorAll("[data-section]");
             
             textsToChange.forEach((el) => {
