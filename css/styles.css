@@ -425,7 +425,11 @@ section {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .nav-links { display: none; } /* Simplificación para móvil */
+    .nav-links { display: flex; 
+                   flesx-wrap:wrap;
+                justify-content:center;
+                padding:10px 0;
+               } /* Simplificación para móvil */
     .grid-gallery { grid-template-columns: 1fr;
                     gap: 20px; }
     .principal_img {
