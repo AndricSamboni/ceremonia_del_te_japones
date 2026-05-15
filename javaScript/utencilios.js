@@ -1,6 +1,6 @@
 function mostrarDetalle(nombre, descripcion) {
     const contenedor = document.getElementById('detalle-utensilio');
-const traducida=traduccion_actual.utensilios[llave];
+
     
     // Cambiamos el contenido del cuadro de abajo dinámicamente
     contenedor.innerHTML = `
